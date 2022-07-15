@@ -1,0 +1,687 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finanical Statement Analysis</title>
+</head>
+<body>
+    
+    <section class="heading">
+    <h1>STATEMENT ANALYZER</h1>
+    </section>
+    
+    <section class="open"></section>
+    <section class= "enter" id=enter2 >
+        <h1>Get Analysis in Seconds!</h1>
+        
+        <div class = flexbox1>
+        <form class="in1" action=" " method= get >
+            
+            <h3>COMPANY DATA</h3>
+            <p>Company Name<input type= "text" id= "n0"></p>
+            <p>Finanical Year<input type= "text" id= "n01"></p>
+            <p>Current Assets<input type= "number" id = "n1"></p>
+            <p>Current Liabilities<input type= "number" id = "n2"></p>
+            <p>Inventory<input type= "number" id= "n3"></p>
+            <p>Cash<input type= "number" id= "n4"></p>
+            <p>Marketable Securities<input type= "number" id= "n5"></p>
+            <p>Receivables<input type= "number" id = "n6"></p>
+            <p>Annual Credit Sales<input type= "number" id = "n7"></p>
+            <p>Cost of Goods Sold<input type= "number" id= "n8"></p>
+            <p>Average Inventory<input type= "number" id= "n9"></p>
+            <p>Inventory Processing Days<input type= "number" id= "n10"></p>
+            <p>Average Collection Period<input type= "number" id = "n11"></p>
+            <p>Payable Payment Period<input type= "number" id = "n12"></p>
+            <p>Sales<input type= "number" id= "n13"></p>
+            <p>Average Net Fixed Assets<input type= "number" id= "n14"></p>
+            <p>Average Total Assets<input type= "number" id= "n15"></p>
+            <p>Total Debt<input type= "number" id = "n16"></p>
+            <p>Total Assets<input type= "number" id = "n17"></p>
+            <p>Long Term Debt<input type= "number" id= "n18"></p>
+            <p>Total Equity<input type= "number" id= "n19"></p>
+            <p>EBIT<input type= "number" id= "n20"></p>
+            <p>Interest Charge<input type= "number" id = "n21"></p>
+            <p>Net Income<input type= "number" id = "n22"></p>
+            <p>Interest Expenses<input type= "number" id= "n23"></p>
+            <p>Average Common Equity<input type= "number" id= "n24"></p>
+            <p>Market Price Per Share<input type= "number" id= "n25"></p>
+            <p>Earning Per Share<input type= "number" id = "n26"></p>
+            <p>Number of Shares<input type= "number" id = "n27"></p>
+            <p>Book Value Per Share<input type= "number" id= "n28"></p>
+            <p>Equity<input type= "number" id= "n29"></p>
+            <p>Cash Flow Per Share<input type= "number" id = "n30"></p>
+            <p>Total Cash Flow<input type= "number" id = "n31"></p>
+            <p>Dividend Per Share<input type= "number" id= "n32"></p>
+            <input type="submit" onclick="cal1()" value="Analyze">
+            
+        </form>
+        
+        <form class="in2" action=" " method= get >
+                
+                <h3>COMPANY DATA</h3>
+                <p>Company Name<input type= "text" id= "m0"></p>
+                <p>Finanical Year<input type= "text" id= "m01"></p>
+                <p>Current Assets<input type= "number" id = "m1"></p>
+                <p>Current Liabilities<input type= "number" id = "m2" ></p>
+                <p>Inventory<input type= "number" id= "m3"></p>
+                <p>Cash<input type= "number" id= "m4"></p>
+                <p>Marketable Securities<input type= "number" id= "m5"></p>
+                <p>Receivables<input type= "number" id = "m6"></p>
+                <p>Annual Credit Sales<input type= "number" id = "m7"></p>
+                <p>Cost of Goods Sold<input type= "number" id= "m8"></p>
+                <p>Average Inventory<input type= "number" id= "m9"></p>
+                <p>Inventory Processing Days<input type= "number" id= "m10"></p>
+                <p>Average Collection Period<input type= "number" id = "m11"></p>
+                <p>Payable Payment Period<input type= "number" id = "m12"></p>
+                <p>Sales<input type= "number" id= "m13"></p>
+                <p>Average Net Fixed Assets<input type= "number" id= "m14"></p>
+                <p>Average Total Assets<input type= "number" id= "m15"></p>
+                <p>Total Debt<input type= "number" id = "m16"></p>
+                <p>Total Assets<input type= "number" id = "m17"></p>
+                <p>Long Term Debt<input type= "number" id= "m18"></p>
+                <p>Total Equity<input type= "number" id= "m19"></p>
+                <p>EBIT<input type= "number" id= "m20"></p>
+                <p>Interest Charge<input type= "number" id = "m21"></p>
+                <p>Net Income<input type= "number" id = "m22"></p>
+                <p>Interest Expenses<input type= "number" id= "m23"></p>
+                <p>Average Common Equity<input type= "number" id= "m24"></p>
+                <p>Market Price Per Share<input type= "number" id= "m25"></p>
+                <p>Earning Per Share<input type= "number" id = "m26"></p>
+                <p>Number of Shares<input type= "number" id = "m27"></p>
+                <p>Book Value Per Share<input type= "number" id= "m28"></p>
+                <p>Equity<input type= "number" id= "m29"></p>
+                <p>Cash Flow Per Share<input type= "number" id = "m30"></p>
+                <p>Total Cash Flow<input type= "number" id = "m31"></p>
+                <p>Dividend Per Share<input type= "number" id= "m32"></p>
+                <input type="submit" onclick="cal2()" value="Analyze">
+                
+        </form>
+        <form class="in3" action=" " method= get >
+                
+            <h3>COMPANY DATA</h3>
+            <p>Company Name<input type= "text" id= "p0"></p>
+            <p>Finanical Year<input type= "text" id= "p01"></p>
+            <p>Current Assets<input type= "number" id = "p1"></p>
+            <p>Current Liabilities<input type= "number" id = "p2" ></p>
+            <p>Inventory<input type= "number" id= "p3"></p>
+            <p>Cash<input type= "number" id= "p4"></p>
+            <p>Marketable Securities<input type= "number" id= "p5"></p>
+            <p>Receivables<input type= "number" id = "p6"></p>
+            <p>Annual Credit Sales<input type= "number" id = "p7"></p>
+            <p>Cost of Goods Sold<input type= "number" id= "p8"></p>
+            <p>Average Inventory<input type= "number" id= "p9"></p>
+            <p>Inventory Processing Days<input type= "number" id= "p10"></p>
+            <p>Average Collection Period<input type= "number" id= "p11"></p>
+            <p>Payable Payment Period<input type= "number" id= "p12"></p>
+            <p>Sales<input type= "number" id= "p13"></p>
+            <p>Average Net Fixed Assets<input type= "number" id= "p14"></p>
+            <p>Average Total Assets<input type= "number" id= "p15"></p>
+            <p>Total Debt<input type= "number" id= "p16"></p>
+            <p>Total Assets<input type= "number" id= "p17"></p>
+            <p>Long Term Debt<input type= "number" id= "p18"></p>
+            <p>Total Equity<input type= "number" id= "p19"></p>
+            <p>EBIT<input type= "number" id= "p20"></p>
+            <p>Interest Charge<input type= "number" id= "p21"></p>
+            <p>Net Income<input type= "number" id= "p22"></p>
+            <p>Interest Expenses<input type= "number" id= "p23"></p>
+            <p>Average Common Equity<input type= "number" id= "p24"></p>
+            <p>Market Price Per Share<input type= "number" id= "p25"></p>
+            <p>Earning Per Share<input type= "number" id= "p26"></p>
+            <p>Number of Shares<input type= "number" id= "p27"></p>
+            <p>Book Value Per Share<input type= "number" id= "p28"></p>
+            <p>Equity<input type= "number" id= "p29"></p>
+            <p>Cash Flow Per Share<input type= "number" id= "p30"></p>
+            <p>Total Cash Flow<input type= "number" id= "p31"></p>
+            <p>Dividend Per Share<input type= "number" id= "p32"></p>
+            <input type="submit" onclick="cal3()" value="Analyze">
+            
+    </form>
+    <form class="in4" action=" " method= get >
+                
+        <h3>COMPANY DATA</h3>
+        <p>Company Name<input type= "text" id= "q0"></p>
+        <p>Finanical Year<input type= "text" id= "q01"></p>
+        <p>Current Assets<input type= "number" id= "q1"></p>
+        <p>Current Liabilities<input type= "number" id= "q2" ></p>
+        <p>Inventory<input type= "number" id= "q3"></p>
+        <p>Cash<input type= "number" id= "q4"></p>
+        <p>Marketable Securities<input type= "number" id= "q5"></p>
+        <p>Receivables<input type= "number" id= "q6"></p>
+        <p>Annual Credit Sales<input type= "number" id= "q7"></p>
+        <p>Cost of Goods Sold<input type= "number" id= "q8"></p>
+        <p>Average Inventory<input type= "number" id= "q9"></p>
+        <p>Inventory Processing Days<input type= "number" id= "q10"></p>
+        <p>Average Collection Period<input type= "number" id= "q11"></p>
+        <p>Payable Payment Period<input type= "number" id= "q12"></p>
+        <p>Sales<input type= "number" id= "q13"></p>
+        <p>Average Net Fixed Assets<input type= "number" id= "q14"></p>
+        <p>Average Total Assets<input type= "number" id= "q15"></p>
+        <p>Total Debt<input type= "number" id= "q16"></p>
+        <p>Total Assets<input type= "number" id= "q17"></p>
+        <p>Long Term Debt<input type= "number" id= "q18"></p>
+        <p>Total Equity<input type= "number" id= "q19"></p>
+        <p>EBIT<input type= "number" id= "q20"></p>
+        <p>Interest Charge<input type= "number" id= "q21"></p>
+        <p>Net Income<input type= "number" id= "q22"></p>
+        <p>Interest Expenses<input type= "number" id= "q23"></p>
+        <p>Average Common Equity<input type= "number" id= "q24"></p>
+        <p>Market Price Per Share<input type= "number" id= "q25"></p>
+        <p>Earning Per Share<input type= "number" id= "q26"></p>
+        <p>Number of Shares<input type= "number" id= "q27"></p>
+        <p>Book Value Per Share<input type= "number" id= "q28"></p>
+        <p>Equity<input type= "number" id= "q29"></p>
+        <p>Cash Flow Per Share<input type= "number" id= "q30"></p>
+        <p>Total Cash Flow<input type= "number" id= "q31"></p>
+        <p>Dividend Per Share<input type= "number" id= "q32"></p>
+        <input type="submit" onclick="cal4()" value="Analyze">
+        
+</form>
+    </div>
+    </section>
+    <section class= result >
+        <div class = flexbox2>
+        <div>
+            <h1>Company Details</h1><br>
+        <table>
+            <tr>
+                <td>Company Name</td>
+                <td Id=name1></td>
+            </tr>
+            <tr>
+                <td>Financial Year</td>
+                <td Id=fy1></td>
+            </tr>
+        </table>
+        <h1>Liquidity Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Current Ratio</td>
+                <td Id=r1></td>
+            </tr>
+            <tr>
+                <td>Quick Assets Ratio</td>
+                <td Id=r2></td>
+            </tr>
+            <tr>
+                <td>Cash Ratio</td>
+                <td Id=r3></td>
+            </tr>
+            
+        </table>
+        
+        
+        <h1>Asset Management Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Average Collection Period</td>
+                <td Id=r4></td>
+            </tr>
+            <tr>
+                <td>Inventory/Stock Turnover</td>
+                <td Id=r5></td>
+            </tr>
+            <tr>
+                <td>Cash Conversion Cycle</td>
+                <td Id=r6></td>
+            </tr>
+            <tr>
+                <td>Fixed Asset Turnover</td>
+                <td Id=r7></td>
+            </tr>
+            <tr>
+                <td>Total Asset Turnover</td>
+                <td Id=r8></td>
+            </tr>
+            
+        </table>
+        
+
+        
+        
+        <h1>Leverage Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Debt Ratio</td>
+                <td Id=r9></td>
+            </tr>
+            <tr>
+                <td>Debt Equity Ratio</td>
+                <td Id=r10></td>
+            </tr>
+            <tr>
+                <td>Interest Ratio</td>
+                <td Id=r11></td>
+            </tr>
+            
+        </table>
+        
+
+        <h1>Profitability Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Gross Profit Margin</td>
+                <td Id=r12></td>
+            </tr>
+            <tr>
+                <td>Operating Profit Margin</td>
+                <td Id=r13></td>
+            </tr>
+            <tr>
+                <td>Net Profit Margin</td>
+                <td Id=r14></td>
+            </tr>
+            <tr>
+                <td>Return on Assets</td>
+                <td Id=r15></td>
+            </tr>
+            <tr>
+                <td>Return on Equity</td>
+                <td Id=r16></td>
+            </tr>
+            
+        </table>
+
+
+        <h1>Valuation Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Price/Earning Ratio</td>
+                <td Id=r17></td>
+            </tr>
+            <tr>
+                <td>Price/Book Value Ratio</td>
+                <td Id=r18></td>
+            </tr>
+            <tr>
+                <td>Price/Cash Flow Ratio</td>
+                <td Id=r19></td>
+            </tr>
+            <tr>
+                <td>Dividend Yield</td>
+                <td Id=r20></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div>
+        <h1>Company Details</h1><br>
+        <table>
+            <tr>
+                <td>Company Name</td>
+                <td Id=name2></td>
+            </tr>
+            <tr>
+                <td>Financial Year</td>
+                <td Id=fy2></td>
+            </tr>
+        </table>
+        <h1>Liquidity Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Current Ratio</td>
+                <td Id=r21></td>
+            </tr>
+            <tr>
+                <td>Quick Assets Ratio</td>
+                <td Id=r22></td>
+            </tr>
+            <tr>
+                <td>Cash Ratio</td>
+                <td Id=r23></td>
+            </tr>
+            
+        </table>
+        
+        
+        <h1>Asset Management Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Average Collection Period</td>
+                <td Id=r24></td>
+            </tr>
+            <tr>
+                <td>Inventory/Stock Turnover</td>
+                <td Id=r25></td>
+            </tr>
+            <tr>
+                <td>Cash Conversion Cycle</td>
+                <td Id=r26></td>
+            </tr>
+            <tr>
+                <td>Fixed Asset Turnover</td>
+                <td Id=r27></td>
+            </tr>
+            <tr>
+                <td>Total Asset Turnover</td>
+                <td Id=r28></td>
+            </tr>
+            
+        </table>
+        
+
+        
+        
+        <h1>Leverage Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Debt Ratio</td>
+                <td Id=r29></td>
+            </tr>
+            <tr>
+                <td>Debt Equity Ratio</td>
+                <td Id=r30></td>
+            </tr>
+            <tr>
+                <td>Interest Ratio</td>
+                <td Id=r31></td>
+            </tr>
+            
+        </table>
+        
+
+        <h1>Profitability Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Gross Profit Margin</td>
+                <td Id=r32></td>
+            </tr>
+            <tr>
+                <td>Operating Profit Margin</td>
+                <td Id=r33></td>
+            </tr>
+            <tr>
+                <td>Net Profit Margin</td>
+                <td Id=r34></td>
+            </tr>
+            <tr>
+                <td>Return on Assets</td>
+                <td Id=r35></td>
+            </tr>
+            <tr>
+                <td>Return on Equity</td>
+                <td Id=r36></td>
+            </tr>
+            
+        </table>
+
+
+        <h1>Valuation Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Price/Earning Ratio</td>
+                <td Id=r37></td>
+            </tr>
+            <tr>
+                <td>Price/Book Value Ratio</td>
+                <td Id=r38></td>
+            </tr>
+            <tr>
+                <td>Price/Cash Flow Ratio</td>
+                <td Id=r39></td>
+            </tr>
+            <tr>
+                <td>Dividend Yield</td>
+                <td Id=r40></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div>
+        <h1>Company Details</h1><br>
+        <table>
+            <tr>
+                <td>Company Name</td>
+                <td Id=name3></td>
+            </tr>
+            <tr>
+                <td>Financial Year</td>
+                <td Id=fy3></td>
+            </tr>
+        </table>
+        <h1>Liquidity Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Current Ratio</td>
+                <td Id=r41></td>
+            </tr>
+            <tr>
+                <td>Quick Assets Ratio</td>
+                <td Id=r42></td>
+            </tr>
+            <tr>
+                <td>Cash Ratio</td>
+                <td Id=r43></td>
+            </tr>
+            
+        </table>
+        
+        
+        <h1>Asset Management Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Average Collection Period</td>
+                <td Id=r44></td>
+            </tr>
+            <tr>
+                <td>Inventory/Stock Turnover</td>
+                <td Id=r45></td>
+            </tr>
+            <tr>
+                <td>Cash Conversion Cycle</td>
+                <td Id=r46></td>
+            </tr>
+            <tr>
+                <td>Fixed Asset Turnover</td>
+                <td Id=r47></td>
+            </tr>
+            <tr>
+                <td>Total Asset Turnover</td>
+                <td Id=r48></td>
+            </tr>
+            
+        </table>
+        
+
+        
+        
+        <h1>Leverage Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Debt Ratio</td>
+                <td Id=r49></td>
+            </tr>
+            <tr>
+                <td>Debt Equity Ratio</td>
+                <td Id=r50></td>
+            </tr>
+            <tr>
+                <td>Interest Ratio</td>
+                <td Id=r51></td>
+            </tr>
+            
+        </table>
+        
+
+        <h1>Profitability Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Gross Profit Margin</td>
+                <td Id=r52></td>
+            </tr>
+            <tr>
+                <td>Operating Profit Margin</td>
+                <td Id=r53></td>
+            </tr>
+            <tr>
+                <td>Net Profit Margin</td>
+                <td Id=r54></td>
+            </tr>
+            <tr>
+                <td>Return on Assets</td>
+                <td Id=r55></td>
+            </tr>
+            <tr>
+                <td>Return on Equity</td>
+                <td Id=r56></td>
+            </tr>
+            
+        </table>
+
+
+        <h1>Valuation Ratios</h1><br>
+        <table>
+            <tr>
+                <td>Price/Earning Ratio</td>
+                <td Id=r57></td>
+            </tr>
+            <tr>
+                <td>Price/Book Value Ratio</td>
+                <td Id=r58></td>
+            </tr>
+            <tr>
+                <td>Price/Cash Flow Ratio</td>
+                <td Id=r59></td>
+            </tr>
+            <tr>
+                <td>Dividend Yield</td>
+                <td Id=r60></td>
+            </tr>
+            </table>
+        </div>
+            <div>
+                <h1>Company Details</h1><br>
+        <table>
+            <tr>
+                <td>Company Name</td>
+                <td Id=name4></td>
+            </tr>
+            <tr>
+                <td>Financial Year</td>
+                <td Id=fy4></td>
+            </tr>
+        </table>
+                <h1>Liquidity Ratios</h1><br>
+                <table>
+                    <tr>
+                        <td>Current Ratio</td>
+                        <td Id=r61></td>
+                    </tr>
+                    <tr>
+                        <td>Quick Assets Ratio</td>
+                        <td Id=r62></td>
+                    </tr>
+                    <tr>
+                        <td>Cash Ratio</td>
+                        <td Id=r63></td>
+                    </tr>
+                    
+                </table>
+                
+                
+                <h1>Asset Management Ratios</h1><br>
+                <table>
+                    <tr>
+                        <td>Average Collection Period</td>
+                        <td Id=r64></td>
+                    </tr>
+                    <tr>
+                        <td>Inventory/Stock Turnover</td>
+                        <td Id=r65></td>
+                    </tr>
+                    <tr>
+                        <td>Cash Conversion Cycle</td>
+                        <td Id=r66></td>
+                    </tr>
+                    <tr>
+                        <td>Fixed Asset Turnover</td>
+                        <td Id=r67></td>
+                    </tr>
+                    <tr>
+                        <td>Total Asset Turnover</td>
+                        <td Id=r68></td>
+                    </tr>
+                    
+                </table>
+                
+        
+                
+                
+                <h1>Leverage Ratios</h1><br>
+                <table>
+                    <tr>
+                        <td>Debt Ratio</td>
+                        <td Id=r69></td>
+                    </tr>
+                    <tr>
+                        <td>Debt Equity Ratio</td>
+                        <td Id=r70></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Ratio</td>
+                        <td Id=r71></td>
+                    </tr>
+                    
+                </table>
+                
+        
+                <h1>Profitability Ratios</h1><br>
+                <table>
+                    <tr>
+                        <td>Gross Profit Margin</td>
+                        <td Id=r72></td>
+                    </tr>
+                    <tr>
+                        <td>Operating Profit Margin</td>
+                        <td Id=r73></td>
+                    </tr>
+                    <tr>
+                        <td>Net Profit Margin</td>
+                        <td Id=r74></td>
+                    </tr>
+                    <tr>
+                        <td>Return on Assets</td>
+                        <td Id=r75></td>
+                    </tr>
+                    <tr>
+                        <td>Return on Equity</td>
+                        <td Id=r76></td>
+                    </tr>
+                    
+                </table>
+        
+        
+                <h1>Valuation Ratios</h1><br>
+                <table>
+                    <tr>
+                        <td>Price/Earning Ratio</td>
+                        <td Id=r77></td>
+                    </tr>
+                    <tr>
+                        <td>Price/Book Value Ratio</td>
+                        <td Id=r78></td>
+                    </tr>
+                    <tr>
+                        <td>Price/Cash Flow Ratio</td>
+                        <td Id=r79></td>
+                    </tr>
+                    <tr>
+                        <td>Dividend Yield</td>
+                        <td Id=r80></td>
+                    </tr>
+            
+            </table>
+    </div>
+        <script src="myscripts.js"></script>
+        </div>
+        <section class="headingprint">
+            <h1>REPORT</h1>
+            <P>Generated from Statement Analyzer by Yug Kathuria</P>
+            </section> 
+        <button class="printb" onclick="printcard()">Print</button>
+        </section>
+          
+    </body>
+     <footer> <section class = credits> Developed by Yug Kathuria </section></footer>
+     </html>
+   
